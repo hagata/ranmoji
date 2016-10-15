@@ -23,7 +23,7 @@
     }
 
     function getRandom() {
-        fetch('http://localhost:5000/emojis/api/v.1.0/')
+        fetch('https://ranmoji.herokuapp.com/emojis/api/v.1.0/')
         .then(response => {
             response.json().then(data => {
                 console.log('response data', data.emoji)
