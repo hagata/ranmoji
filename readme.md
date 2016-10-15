@@ -1,8 +1,4 @@
-# Ranmoji
-Try it. [https://ranmoji.herokuapp.com/](https://ranmoji.herokuapp.com/)
+Simple API Docs for [Ranmoji](https://github.com/hagata/ranmoji)
 
-A very, very simple python + flask application with a public api for generating random emojis.
-
-# API Documentation
-`coming soon`
+Demo App [https://ranmoji.herokuapp.com/](https://ranmoji.herokuapp.com/)
 
