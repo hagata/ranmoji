@@ -4,14 +4,14 @@ import random
 
 import emojilibrary
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 
-@app.route('/emojis/api/v.1.0/', methods=['GET'])
+@application.route('/emojis/api/v.1.0/', methods=['GET'])
 def get():
       return jsonify({'emoji': random.choice(emojilibrary.emojis)})
 
-@app.route('/')
+@application.route('/')
 def index(context=None):
   context = {
     'title':"Ranmoji"
@@ -19,4 +19,4 @@ def index(context=None):
   return render_template('index.tpl', data=context)
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	application.run(debug=True)
