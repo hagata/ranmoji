@@ -1,5 +1,6 @@
 #!flask/bin/python
 from flask import Flask, jsonify, render_template
+from flask_cors import CORS, cross_origin
 import random
 
 import emojilibrary
@@ -8,6 +9,7 @@ application = Flask(__name__)
 
 
 @application.route('/emojis/api/v.1.0/', methods=['GET'])
+@cross_origin()
 def get():
       return jsonify({'emoji': random.choice(emojilibrary.emojis)})
 
